@@ -26,10 +26,6 @@ class Recommendation:
     
         return list(recommended_people)
         
-    def get_role(self, user):
-        # Helper to get role of a user if needed
-        return self.connections.get(user, {}).get("role", None)
-
 
 
 app = Flask(__name__)
