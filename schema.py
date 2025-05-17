@@ -9,7 +9,7 @@ def get_recommendation_dict():
     recommendation_dict = {}
     
     # Fetch only email and followers fields
-    authors = authors_collection.find({}, {"email": 1, "following": 1, "_id": 0})
+    authors = authors_collection.find({}, {"email": 1,"role":1, "following": 1, "_id": 0})
 
     for author in authors:
         recommendation_dict[author["email"]] = author.get("following", [])  # Default to empty list if no followers
