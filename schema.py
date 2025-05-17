@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Connect to MongoDB (Update with your MongoDB URI)
-client = MongoClient('mongodb+srv://yugeshkaran01:GEMBkFW5Ny5wi4ox@blog.adtwl.mongodb.net/Blog-Data?retryWrites=true&w=majority&appName=blog')
+client = MongoClient('mongodb+srv://yugeshkaran01:GEMBkFW5Ny5wi4ox@blog.adtwl.mongodb.net/Blog?retryWrites=true&w=majority&appName=blog')
 db = client["Blog-Data"]  # Replace with your actual database name
 authors_collection = db["authors"]  # Replace with your actual collection name
 
