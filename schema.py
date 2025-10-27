@@ -1,9 +1,12 @@
 from pymongo import MongoClient
-
+import os
+from dotenv import load_dotenv
 # Connect to MongoDB (Update with your MongoDB URI)
-client = MongoClient('mongodb+srv://yugeshkaran01:GEMBkFW5Ny5wi4ox@blog.adtwl.mongodb.net/Blog?retryWrites=true&w=majority&appName=blog')
-db = client["Blog"]  # Replace with your actual database name
-authors_collection = db["authors"]  # Replace with your actual collection name
+load_dotenv()
+MongoDB_URL = os.getenv('MONGODB_URL')
+client = MongoClient(MongoDB_URL)
+db = client["Blog"]  # database name
+authors_collection = db["authors"]  # collection name
 
 def get_recommendation_dict():
     recommendation_dict = {}
