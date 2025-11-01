@@ -2,30 +2,9 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS 
 
 from schema import get_recommendation_dict
+from rcmd import Recommendation
 
-
-class Recommendation:
-    def __init__(self,connectons={}):
-       
-        self.connections = connectons
-
-        # print(self.connections)
-
-    def neighbour(self ,user):
-        
-        if user not in self.connections:
-            return []
-        
-        recommended_people = set()
-
-        for friend in self.connections[user]:
-            if friend in self.connections:
-                for friend_of_friend in self.connections[friend]:
-                    if friend_of_friend != user and friend_of_friend  not in self.connections[user]:
-                        recommended_people.add(friend_of_friend)
-    
-        return list(recommended_people)
-        
+      
 
 
 app = Flask(__name__)

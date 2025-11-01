@@ -25,3 +25,32 @@ if __name__ =='__main__':
     # Execute the function and print the result
     recommendation_dict = get_recommendation_dict()
     print(recommendation_dict)
+
+    # Example output format:
+    {
+        'yugeshkaran01@gmail.com':
+          ['kumaranv.set2022@dsuniversity.ac.in', 'ssibi3290@gmail.com', 
+           'rosiniisuresh@gmail.com', 'haricharanuggirala1133@gmail.com', 
+           '21aid060@dsuniversity.ac.in'],
+
+        'ssibi3290@gmail.com': [], 
+        
+        'haricharanuggirala1133@gmail.com': ['pradeepshiyam1314@gmail.com'], 
+
+        'ajayvarsan2020@gmail.com': [], 
+
+        'yugeshkaran001@gmail.com': 
+           ['haricharanuggirala1133@gmail.com', 'yugeshkaran01@gmail.com', '21aid060@dsuniversity.ac.in'], 
+        
+        'rosiniisuresh@gmail.com': [], 
+        
+        'rosiniis.set2022@dsuniversity.ac.in': [], 
+        
+        'kumaranv.set2022@dsuniversity.ac.in':
+           ['yugeshkaran01@gmail.com', 'yugeshkaran01@gmail.com', 'pradeepshiyam1314@gmail.com'], 
+           
+        '21aid145@dsuniversity.ac.in': [], 
+        
+        '21aid060@dsuniversity.ac.in': ['ssibi3290@gmail.com']
+
+        }
