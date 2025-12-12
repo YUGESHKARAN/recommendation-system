@@ -136,7 +136,7 @@ Contributions are welcome! Open issues or pull requests for feature additions, b
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL 3.0 License.
 
 ---
 
