@@ -7,7 +7,7 @@ This repository contains a Python-based recommendation system designed for an e-
 Recommendations are dynamically generated based on MongoDB data, ensuring that author details and their connections are always up-to-date.
 
 > **Integrated with:**  
-> Tech-Community-App (E-Learning Fullstack App)](https://github.com/YUGESHKARAN/Node-Blog-App.git)
+> Tech-Community-App [(E-Learning Fullstack App)](https://github.com/YUGESHKARAN/Node-Blog-App.git)
 
 ---
 
