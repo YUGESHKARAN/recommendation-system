@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS 
 
@@ -9,7 +10,10 @@ from middleware.auth_token import token_required
 
 app = Flask(__name__)
 CORS(app)   
-
+frontend_url = os.getenv('FRONTEND_END_URL')
+CORS(app, resources={
+    r"/recommended": {"origins": [frontend_url,"http://localhost:5173"]}
+})
 
 @app.route("/")
 def home():
