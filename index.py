@@ -23,7 +23,7 @@ def home():
 @app.route('/recommended',methods=['POST'])
 @token_required
 def recommended_people():
-    data = request.json
+    # data = request.json
     user_data = request.user
 
     # email = data.get('email')
