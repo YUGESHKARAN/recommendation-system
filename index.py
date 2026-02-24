@@ -16,6 +16,7 @@ CORS(app, resources={
 })
 
 @app.route("/")
+@token_required
 def home():
     return render_template('index.html')    
 
