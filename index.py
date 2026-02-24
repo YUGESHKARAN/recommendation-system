@@ -3,7 +3,7 @@ from flask_cors import CORS
 
 from schema import get_recommendation_dict
 from rcmd import Recommendation
-
+from middleware.auth_token import token_required
       
 
 
@@ -17,6 +17,7 @@ def home():
 
 
 @app.route('/recommended',methods=['POST'])
+@token_required
 def recommended_people():
     data = request.json
     email = data.get('email')
@@ -24,7 +25,7 @@ def recommended_people():
 
     recommend_people = people_network.neighbour(user = email)
 
-    return jsonify({'remonneded_people':recommend_people})
+    return jsonify({'recommended_people':recommend_people})
 
 if __name__=='__main__':
     app.run(debug=True)
