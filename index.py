@@ -25,17 +25,18 @@ def home():
 @token_required
 def recommended_people():
     # data = request.json
-    user_data = request.user
+     # email = data.get('email')
 
-    # email = data.get('email')
+    user_data = request.user #from token
     email = user_data.get("email")
+    
     people_network = Recommendation(connectons=get_recommendation_dict())
 
     recommend_people = people_network.neighbour(user = email)
-    print(user_data)
+    
 
     return jsonify({'recommended_people':recommend_people})
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=False)
    

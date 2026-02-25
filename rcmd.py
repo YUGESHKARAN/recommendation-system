@@ -21,7 +21,7 @@ class Recommendation:
                     if friend_of_friend != user and friend_of_friend  not in self.connections[user]:
                         recommended_people.add(friend_of_friend)
     
-        return list(recommended_people)
+        return list(recommended_people)[:100]  
         
         
 
