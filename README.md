@@ -25,9 +25,6 @@ Tech-Community-App [(E-Learning Fullstack App)](https://github.com/YUGESHKARAN/N
 - **Easy Integration:**  
   Designed to be modular and easily integrated into Node.js/Express-based e-learning applications.
 
-- **Template Support:**  
-  Includes template files for web-based interaction.
-
 ---
 
 ## Directory Structure
