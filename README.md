@@ -137,10 +137,4 @@ This project is licensed under the GPL 3.0 License.
 
 ---
 
-## Acknowledgments
-
-- Special thanks to the open-source community for graph algorithm inspirations.
-
----
-
 *For questions or support, Open an issue in this repository.*
