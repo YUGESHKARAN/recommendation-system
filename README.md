@@ -1,13 +1,9 @@
-# Recommendation System for E-Learning Platform
+# Recommendation System for Tech-Community-Platform
 
-
-## Overview
-
-This repository contains a Python-based recommendation system designed for an e-learning fullstack application. The primary function of this system is to recommend authors (users) using a graph data structure, optimizing user engagement and network building within the platform.  
+This repository contains a Python-based recommendation system designed for an [Tech-Community-App](https://github.com/YUGESHKARAN/Node-Blog-App.git). The primary function of this system is to recommend authors (users) using a graph data structure, optimizing user engagement and network building within the platform.  
 Recommendations are dynamically generated based on MongoDB data, ensuring that author details and their connections are always up-to-date.
 
-**Integrated with:**  
-Tech-Community-App [(E-Learning Fullstack App)](https://github.com/YUGESHKARAN/Node-Blog-App.git)
+![Tech-Comm-App-Network-Recommendation](/assets/tech-comm-network.png)
 
 ---
 
